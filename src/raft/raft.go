@@ -50,6 +50,7 @@ type Raft struct {
 	// Look at the paper's Figure 2 for a description of what
 	// state a Raft server must maintain.
 
+
 }
 
 // return currentTerm and whether this server
@@ -90,7 +91,13 @@ func (rf *Raft) readPersist(data []byte) {
 	// d.Decode(&rf.yyy)
 }
 
+type AppendEntriesArgs struct{
 
+}
+
+type AppendEntriesReply struct{
+
+}
 
 
 //
