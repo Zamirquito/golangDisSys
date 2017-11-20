@@ -99,7 +99,7 @@ func (rf *Raft) readPersist(data []byte) {
 type RequestVoteArgs struct {
 	// Your data here.
 	term int
-	candidateId ind
+	candidateId int
 	lastLogIndex int
 	lastLogTerm int
 }
