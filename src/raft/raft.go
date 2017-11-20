@@ -98,10 +98,10 @@ func (rf *Raft) readPersist(data []byte) {
 //
 type RequestVoteArgs struct {
 	// Your data here.
-	term int
-	candidateId int
-	lastLogIndex int
-	lastLogTerm int
+	Term int
+	CandidateId int
+	LastLogIndex int
+	LastLogTerm int
 }
 
 //
@@ -109,8 +109,8 @@ type RequestVoteArgs struct {
 //
 type RequestVoteReply struct {
 	// Your data here.
-	term int
-	voteGranted bool
+	Term int
+	VoteGranted bool
 }
 
 //
